@@ -38,40 +38,35 @@
       margin: 0 auto;
     }
     .product {
-      display: flex;
-      gap: 1.5rem;
       background: #1a1a1a;
       padding: 1.5rem;
       border-radius: 1rem;
       transition: 0.3s;
       border: 1px solid #333;
+      display: flex;
+      flex-direction: row;
       align-items: center;
+      gap: 1.5rem;
     }
     .product:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
     }
     .product img {
-      width: 120px;
+      width: 180px;
       height: auto;
       border-radius: 0.5rem;
-      margin-bottom: 0;
     }
     .product-info {
       flex: 1;
     }
-    .product-info h2 {
+    .product h2 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
-    .product-info p {
+    .product p {
       font-size: 0.95rem;
       color: #aaa;
-      margin-bottom: 1rem;
-    }
-    .plugins {
-      font-style: italic;
-      color: #bbb;
       margin-bottom: 1rem;
     }
     .btn {
@@ -104,17 +99,6 @@
     .social-links a:hover {
       text-decoration: underline;
     }
-    @media (max-width: 600px) {
-      .product {
-        flex-direction: column;
-        text-align: center;
-      }
-      .product img {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
@@ -125,12 +109,12 @@
 
   <section class="product-grid">
     <div class="product">
-      <img src="https://i.postimg.cc/tJzpQNkL/Comp-1-00000.png" alt="Twitch Transition Preset" />
+      <img src="https://i.postimg.cc/j5h8HY8M/cover.png" alt="Twitch Transition Preset" />
       <div class="product-info">
         <h2>Twitch Glitch Transition – AE Preset</h2>
         <p>A clean, energetic Twitch-style transition for your gaming edits and streams. Easy to use in After Effects.</p>
-        <p class="plugins">Requires: Twitch plugin, BCC Fast Lens Blur plugin</p>
-        <a href="https://abdullahking64.gumroad.com/l/ucoevi"_blank">Buy Now – $0.99</a>
+        <p><strong>Plugins Required:</strong> Twitch & BCC Fast Lens Blur</p>
+        <a href="https://abdullahking64.gumroad.com/l/ucoevi" class="btn" target="_blank">Buy Now – $0.99</a>
       </div>
     </div>
   </section>
